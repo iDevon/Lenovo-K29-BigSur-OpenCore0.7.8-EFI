@@ -44,6 +44,8 @@ Device (SMCD)
 ```
 **并在DeviceProperties下内建通用EC控制器 **
 
+参照来源: #[https://github.com/acidanthera/VirtualSMC/blob/master/Docs/EmbeddedControllers.md#lenovo-g480](url)
+
 添加如下代码：
 
 ```
@@ -67,8 +69,6 @@ Device (SMCD)
 				<integer>1</integer>
 			</dict>
 ```
-参照来源: @acidanthera	/VirtualSMC/Docs/EmbeddedControllers.md
-[https://github.com/acidanthera/VirtualSMC/blob/master/Docs/EmbeddedControllers.md](url)
 
 如图：
 
