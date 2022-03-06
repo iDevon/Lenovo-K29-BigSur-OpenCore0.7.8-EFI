@@ -8,7 +8,7 @@ K29声卡ALC269 仿冒ID为28
 
 音量+【FN+Right】 音量-【FN+Left】
 
-风扇转速显示正常
+**风扇转速显示正常**
 
 ![截屏2022-03-06 上午11 34 33](https://user-images.githubusercontent.com/86851841/156908108-6bffdabd-d46b-4a33-aae6-2169b5b258f2.png)
 
@@ -31,12 +31,12 @@ Device (SMCD)
                     }
                 }
 ```
-查找
+**查找**
 ```
                         Offset (0x95), 
                         FSP1,   8, 
 ```
-修改为：
+**修改为：**
 ```
                         Offset (0x94), 
                         FSPD,   8, 
@@ -54,7 +54,7 @@ CPU为i7-3630QM 非同款CPU请勿加载`ssdt.aml`
 
 CPU开启睿频用`CPUFriend`工具生成`CPUFriendDataProvider.kext`或`SSDT_data.aml`不可同时使用。
 
-工具下载：
+**工具下载：**
 
 ssdtPRGen [https://github.com/Piker-Alpha/ssdtPRGen.sh](url)
 
