@@ -40,6 +40,7 @@ Device (SMCD)
                         FSP1,   8, 
 ```
 并在DeviceProperties内建 风扇转速显示正常
+
 ![截屏2022-03-06 上午11 36 38](https://user-images.githubusercontent.com/86851841/156908140-7111beb5-dfd0-43e7-9fbb-0f80ae1e7e2e.png)
 
 ![截屏2022-03-06 上午11 34 33](https://user-images.githubusercontent.com/86851841/156908108-6bffdabd-d46b-4a33-aae6-2169b5b258f2.png)
@@ -47,8 +48,13 @@ Device (SMCD)
 不可用：指纹
 
 用`ssdtPRGen.sh-17.0`生成CPU变频配置文件
+
 CPU为i7-3630QM 非同款CPU请勿加载`ssdt.aml`
+
 CPU开启睿频用`CPUFriend`工具生成`CPUFriendDataProvider.kext`或`SSDT_data.aml`不可同时使用。
+
 工具下载：
+
 ssdtPRGen [https://github.com/Piker-Alpha/ssdtPRGen.sh](url)
+
 CPUFriend [https://github.com/acidanthera/CPUFriend](url)
