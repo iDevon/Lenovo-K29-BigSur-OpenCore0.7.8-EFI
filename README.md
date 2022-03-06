@@ -12,7 +12,7 @@ K29声卡ALC269 仿冒ID为28
 
 ![截屏2022-03-06 上午11 34 33](https://user-images.githubusercontent.com/86851841/156908108-6bffdabd-d46b-4a33-aae6-2169b5b258f2.png)
 
-在DSDT中H-EC上面添加SMCD
+**在DSDT中H-EC上面添加SMCD**
 ```
 Device (SMCD)
                 {
