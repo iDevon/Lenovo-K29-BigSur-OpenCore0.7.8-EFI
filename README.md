@@ -67,7 +67,7 @@ Device (SMCD)
 				<integer>1</integer>
 			</dict>
 ```
-参照来源: @acidanthera/VirtualSMC /Docs/EmbeddedControllers.md
+参照来源: @acidanthera	/VirtualSMC/Docs/EmbeddedControllers.md
 [https://github.com/acidanthera/VirtualSMC/blob/master/Docs/EmbeddedControllers.md](url)
 
 如图：
