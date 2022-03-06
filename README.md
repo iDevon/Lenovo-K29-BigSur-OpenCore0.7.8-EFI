@@ -42,7 +42,35 @@ Device (SMCD)
                         FSPD,   8, 
                         FSP1,   8, 
 ```
-并在DeviceProperties内建 风扇转速显示正常
+**并在DeviceProperties下内建通用EC控制器 **
+
+添加如下代码：
+
+```
+			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
+			<dict>
+				<key>ec-device</key>
+				<string>generic</string>
+				<key>fan-count</key>
+				<integer>1</integer>
+				<key>fan0-addr</key>
+				<integer>149</integer>
+				<key>fan0-big</key>
+				<integer>1</integer>
+				<key>fan0-div</key>
+				<integer>11</integer>
+				<key>fan0-inverse</key>
+				<integer>1</integer>
+				<key>fan0-mul</key>
+				<integer>240</integer>
+				<key>fan0-size</key>
+				<integer>1</integer>
+			</dict>
+```
+参照来源: @acidanthera/VirtualSMC /Docs/EmbeddedControllers.md
+[https://github.com/acidanthera/VirtualSMC/blob/master/Docs/EmbeddedControllers.md](url)
+
+如图：
 
 ![截屏2022-03-06 上午11 36 38](https://user-images.githubusercontent.com/86851841/156908140-7111beb5-dfd0-43e7-9fbb-0f80ae1e7e2e.png)
 
