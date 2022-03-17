@@ -2,11 +2,29 @@
 
 可使用设备及功能：网卡、无线、蓝牙、触控板、摄像头、读卡器、CPU睿频、隔空投送、合盖睡眠、唤醒、投屏、亮度调整、音量调整
 
-K29声卡ALC269 仿冒ID为28
+**K29声卡ALC269 仿冒ID为28**
 
-亮度+【Pause】  亮度-【FN+Delete】
+亮度+`Pause`	亮度-`FN+Delete`	音量+`FN+Right`	音量-`FN+Left`
 
-音量+【FN+Right】 音量-【FN+Left】
+
+**关于`Config.plist`配置请参照：**
+[https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html](url)
+
+
+**蓝牙睡眠唤醒问题：**
+
+我机型使用的无线网卡：`Broadcom94360HMB` 蓝牙芯片组`20702A3`
+
+将`BrcmFirmwareData.kext`与`BrcmPatchRAM3.kext`安装到`/Library/Extensions`
+
+蓝牙驱动下载：[https://github.com/acidanthera/BrcmPatchRAM](url)
+
+其它蓝牙`Intel`及`Atheros`请参照如下链接：
+
+Intel:[https://dortania.github.io/Wireless-Buyers-Guide/misc/intel.html](url)
+
+Atheros:[https://github.com/zxystd/AthBluetoothFirmware](url)
+
 
 **风扇转速显示正常**
 
@@ -42,7 +60,7 @@ Device (SMCD)
                         FSPD,   8, 
                         FSP1,   8, 
 ```
-**并在DeviceProperties下内建通用EC控制器 **
+**并在DeviceProperties下内建通用EC控制器**
 
 参照来源: #https://github.com/acidanthera/VirtualSMC/blob/master/Docs/EmbeddedControllers.md#lenovo-g480
 
@@ -87,3 +105,7 @@ CPU开启睿频用`CPUFriend`工具生成`CPUFriendDataProvider.kext`或`SSDT_da
 ssdtPRGen [https://github.com/Piker-Alpha/ssdtPRGen.sh](url)
 
 CPUFriend [https://github.com/acidanthera/CPUFriend](url)
+
+特别感谢：
+
+[@mjs520](https://github.com/mjs520)提供读取风扇转速的方案[https://github.com/acidanthera/VirtualSMC/pull/64](url)
